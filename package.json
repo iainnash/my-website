@@ -4,7 +4,8 @@
   "description": "Make your website with one import!",
   "main": "index.js",
   "scripts": {
-    "test": "npm t"
+    "test": "npm t",
+    "demo": "cd demo && parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/iainnash/my-website/issues"
   },
-  "homepage": "https://github.com/iainnash/my-website#readme"
+  "homepage": "https://github.com/iainnash/my-website#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "parcel-bundler": "^1.12.4"
+  }
 }

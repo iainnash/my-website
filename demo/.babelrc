@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/preset-react", {
+      "pragma": "MyWebsite.createElement"
+    }]
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "my-website": "../index"
+      }
+    }]
+  ]
+}
