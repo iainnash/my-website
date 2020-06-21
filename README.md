@@ -1,18 +1,21 @@
 # my-website
 
-Make your website as easy as 1 - 2 - 3.
+Make your website as easy as 1 – 2 – 3.
 
-1. npm i -g parcel-bundler
-2.
+1. `npm i -g parcel-bundler`
+2. add a few files
+
 index.html:
 ```
 <script src="website.js"></script>
 ```
+
 website.js:
 ```
 import MyWebsite from 'my-website';
 <MyWebsite />;
 ```
+
 .babelrc:
 ```
 {
@@ -23,6 +26,7 @@ import MyWebsite from 'my-website';
   ],
 }
 ```
+
 3. `parcel run index.html`
 
 and you're done!
@@ -33,16 +37,19 @@ and you're done!
 
 ## Advanced options
 You can customize your website simply by passing in props:
+
 ```
 import MyWebsite from 'my-website';
+
 <MyWebsite animations={false} title="My Awesome Website" header="This website is more awesome" />;
 ```
 
 ## Non-JSX Version
 If you want to be even more lightweight, you can use this:
-1.
-```
+1. write your js
+
 website.js
+```
 import MyWebsite from 'my-website';
 
 MyWebsite({
@@ -50,17 +57,19 @@ MyWebsite({
 });
 ```
 
-2.
+2. write your loader page
+
 index.html
 ```
 <script src="website.js"></script>
 ```
 
-3.
+3. run parcel and serve!
 `parcel index.html`
 
 
 inspired by https://twitter.com/wongmjane/status/1274713940505681921
 
 ‡ (other than something that can run jsx)
+
 ‡‡ (there is a non-jsx version)
