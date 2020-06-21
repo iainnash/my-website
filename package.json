@@ -1,0 +1,23 @@
+{
+  "name": "my-website",
+  "version": "0.0.1",
+  "description": "Make your website with one import!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iainnash/my-website.git"
+  },
+  "keywords": [
+    "website",
+    "demo"
+  ],
+  "author": "iain nash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iainnash/my-website/issues"
+  },
+  "homepage": "https://github.com/iainnash/my-website#readme"
+}
