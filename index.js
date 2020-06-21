@@ -1,5 +1,4 @@
 import defaultSettings from './defaultSettings';
-const MyWebsite = (props) => {};
 
 const HEAD = `
   <style>
@@ -58,10 +57,18 @@ const makeWebsite = (props) => {
   document.getElementsByTagName('body')[0].innerHTML += getContent(settings);
 };
 
-MyWebsite.createElement = (_, props) => {
+const onLoadMakeWebsite = (...args) => {
   window.addEventListener('DOMContentLoaded', () => {
-    makeWebsite(props);
-  })
+    makeWebsite(...args);
+  });
+}
+
+const MyWebsite = (props) => {
+  onLoadMakeWebsite(props);
+};
+
+MyWebsite.createElement = (_, props) => {
+  onLoadMakeWebsite(props);
 };
 
 export default MyWebsite;

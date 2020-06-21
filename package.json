@@ -1,7 +1,7 @@
 {
   "name": "my-website",
-  "version": "0.0.1",
-  "description": "Make your website with one import!",
+  "version": "0.0.2",
+  "description": "Make your website with one import (and no deps)!",
   "main": "index.js",
   "scripts": {
     "test": "npm t",
@@ -16,7 +16,7 @@
     "demo"
   ],
   "author": "iain nash",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iainnash/my-website/issues"
   },
